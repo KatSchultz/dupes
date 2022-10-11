@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-height: 120px;
+}
+nav {
+  width: max-content;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu-btn {
+  width: 100px;
+  height: 100px;
+}
