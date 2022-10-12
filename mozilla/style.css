@@ -4,6 +4,7 @@
   font-family: "Dosis", sans-serif;
 }
 body {
+  margin: 0;
   background-color: black;
 }
 
@@ -12,12 +13,18 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-height: 70px;
+  max-height: 50px;
+  border-bottom: solid 1px #eee;
+}
+.logo {
+  max-width: 40px;
+  max-height: 40px;
+  padding: 5px;
 }
 
 .menu-btn {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 50px;
+  max-height: 50px;
   padding: 10px;
   cursor: pointer;
   border-radius: 1rem;
@@ -30,7 +37,7 @@ body {
 
 nav {
   display: none;
-  /* margin-top: 200px; */
+  margin-top: 50px;
   width: max-content;
   right: 0;
   position: absolute;
@@ -46,7 +53,7 @@ ul {
 }
 
 li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .menu-holder:hover > .menu-btn {
   background: #555;
@@ -66,4 +73,42 @@ li {
 
 h1 {
   font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-holder {
+    height: 70px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .icon-wrapper {
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    max-height: 50px;
+    border-bottom: solid 1px #eee;
+  }
+  nav {
+    display: flex;
+    margin-top: 0px;
+    left: 0;
+
+    width: max-content;
+    /* position: absolute; */
+    background-color: #000;
+  }
+  ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  li {
+    padding: 0 10px;
+  }
 }
